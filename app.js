@@ -186,13 +186,6 @@ app.get('/delete-contact/:contactId', (req, res)=>{
 });
 
 
-
-
-
-
-
-
-
 //2
 app.listen(4001, function() {
     console.log('server started on port 4001');
