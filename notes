@@ -1,0 +1,21 @@
+//terminal commads
+mongo
+mongod 
+show dbs
+
+//create collection
+use test 
+db.createCollection("testtable")
+show dbs
+db.collection.drop("testtable")
+db.collection.find()
+
+db.testtable.insert({name:'Snow', lastname:'White'})
+db.testtable.find()
+db.testtable.find().pretty()
+
+db.dropDatabase()
+
+
+//error events.js:183  
+    killallnode enter

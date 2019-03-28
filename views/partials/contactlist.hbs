@@ -1,0 +1,55 @@
+<h1>CONTACT LIST</h1>
+
+<table>
+    <thead>
+    <tr class="highlight">
+        <th>Image</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+        <th>email Address</th>
+        <th>Username</th>
+        <th>Street Address </th>
+        <th>Zip </th>
+        <th>Country </th>
+        <th>Options</th>
+    </tr>
+    </thead>
+    {{#each y}}
+    <tbody>
+    <tr>
+        <td>
+        <img src="/uploads/{{this.avatar}}" class="profile">
+        </td>
+        <td>
+            {{this.firstname}}
+        </td>
+        <td>
+            {{this.lastname}}
+        </td>
+        <td>
+            {{phonenumber}}
+        </td>  
+        <td>
+            {{email}}
+        </td> 
+        <td>
+            {{username}}
+        </td>
+        <td>
+            {{address}}
+        </td>  
+        <td>
+            {{zipcode}}
+        </td> 
+        <td>
+            {{country}}
+        </td>
+        <td>
+            <a href="/contact/update/{{_id}}"><i class="far fa-grin-stars"></i>Update</a>
+            <a href="/contact/update/{{_id}}"><i class="far fa-surprise"></i>Delete</a>
+        </td>
+    </tr>
+    </tbody>
+    {{/each}}
+</table>

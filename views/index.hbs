@@ -1,0 +1,54 @@
+{{> header}}
+
+<main>
+<h1>Contact Form</h1>
+<div class="col-md-12 signup">
+    <form action="/newContact" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">First Name</label>
+            <input type="text" name="firstname" class="form-control" placeholder="What is your first name?" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Last Name</label>
+            <input type="text" name="lastname" class="form-control" placeholder="What is your surname?" required>
+        </div>
+        <div class="form-group">
+            <label for="phonenumber">Phonenumber</label>
+            <input type="number" name="phonenumber" class="form-control" placeholder="What is your phonenumber?" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email Address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="username">User-Name</label>
+            <input type="text" name="username" class="form-control"  placeholder="What is your username?" required> 
+        </div>
+            <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" name="address" class="form-control"  placeholder="Street Address" required>
+        </div>
+        <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" name="zipcode" class="form-control"  placeholder="Zip Code" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" name="country" class="form-control"  placeholder="Country" required>
+        </div>
+        <div id="form-group">
+            <label for="avatar">Choose file</label>
+            <input type="file" class="form-control" name="avatar" id="avatar">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{{> contactlist}}
+
+</main>
+</body>
+
+{{> footer}}
+

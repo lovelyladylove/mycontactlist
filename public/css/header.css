@@ -1,0 +1,10 @@
+.navbar-default {
+    background-color: #ea7cb1;
+    border: 3px solid #ed0977;
+    height: 100px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 60px;
+}
